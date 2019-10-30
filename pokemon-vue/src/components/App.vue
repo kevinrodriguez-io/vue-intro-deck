@@ -48,4 +48,7 @@ export default {
   h1.title {
     text-align: center;
   }
+  .elevated {
+    box-shadow: 0px 4px 5px -4px rgba(0, 0, 0, 1);
+  }
 </style>
