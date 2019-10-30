@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Example</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<style>
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>Foods</h1>
+			<ul id="foods"></ul>
+			<form id="addFoodForm">
+				<label for="foodToAdd">Add some food</label>
+				<input type="text" name="foodToAdd" id="foodToAdd" />
+				<button type="submit">Add food</button>
+			</form>
+			<form id="editFoodForm" class="hiddenForm">
+				<label for="foodToAdd">Edit some food</label>
+				<input type="hidden" name="foodToEditHidden" id="foodToEditHidden" />
+				<input type="text" name="foodToEdit" id="foodToEdit" />
+				<button type="submit">Edit food</button>
+			</form>
+		</div>
+		<script src="./foods.js"></script>
+	</body>
+</html>

@@ -1,0 +1,6 @@
+form.hiddenForm {
+  display: none;
+}
+form.shownForm {
+  display: initial;
+}

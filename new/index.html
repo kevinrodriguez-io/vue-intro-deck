@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.6/vue.js"></script>
+		<title>Vue</title>
+		<style>
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<h1>Foods</h1>
+			<ul v-if="foods.length > 0">
+				<li v-for="(food, index) in foods" :key="index">
+					<input type="text" v-model="food.title" />
+					<button type="button" @click="deleteFood(food)">Delete</button>
+				</li>
+			</ul>
+			<ul v-else>
+				<li>There is no food</li>
+			</ul>
+			<form @submit.prevent="addFood">
+				<label for="foodToAdd">Add some food</label>
+				<input type="text" name="foodToAdd" v-model="foodToAdd" />
+				<button type="submit">Add food</button>
+			</form>
+		</div>
+		<script src="./foods.js"></script>
+	</body>
+</html>
