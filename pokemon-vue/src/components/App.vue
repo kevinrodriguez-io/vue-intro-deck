@@ -1,7 +1,7 @@
 <template>
   <main>
     <h1 class="title">Pokedex 🌍</h1>
-    <search-bar @on-search="handleSearch" />
+    <search-bar @search="handleSearch" />
     <pokemon-list :pokemons="filteredPokemons" />
   </main>
 </template>

@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     handleSearchBarSubmit() {
-      this.$emit('on-search', this.search)
+      this.$emit('search', this.search)
     }
   },
 }
